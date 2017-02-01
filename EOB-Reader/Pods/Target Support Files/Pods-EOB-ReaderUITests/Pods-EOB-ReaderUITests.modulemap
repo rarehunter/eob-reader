@@ -1,0 +1,6 @@
+framework module Pods_EOB_ReaderUITests {
+  umbrella header "Pods-EOB-ReaderUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

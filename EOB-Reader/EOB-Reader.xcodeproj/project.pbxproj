@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F2572A44442FC120646887A /* Pods_EOB_Reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC819B5A6B94DF575842EAA /* Pods_EOB_Reader.framework */; };
+		7E0236ED1E1744F300F900C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0236EC1E1744F300F900C9 /* AppDelegate.swift */; };
+		7E0236EF1E1744F300F900C9 /* RecentScansVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0236EE1E1744F300F900C9 /* RecentScansVC.swift */; };
+		7E0236F11E1744F300F900C9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0236F01E1744F300F900C9 /* CameraViewController.swift */; };
+		7E0236F41E1744F300F900C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0236F21E1744F300F900C9 /* Main.storyboard */; };
+		7E0236F61E1744F300F900C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0236F51E1744F300F900C9 /* Assets.xcassets */; };
+		7E0236F91E1744F300F900C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0236F71E1744F300F900C9 /* LaunchScreen.storyboard */; };
+		7E0237041E1744F300F900C9 /* EOB_ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0237031E1744F300F900C9 /* EOB_ReaderTests.swift */; };
+		7E02370F1E1744F400F900C9 /* EOB_ReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E02370E1E1744F400F900C9 /* EOB_ReaderUITests.swift */; };
+		7E484C711E32C4B5002EADD6 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 7E484C701E32C4B5002EADD6 /* tessdata */; };
+		7E5F72591E3EC4CC007B6839 /* AgreementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F72581E3EC4CC007B6839 /* AgreementVC.swift */; };
+		7E6FC5D41E306E7C00B13215 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FC5D31E306E7C00B13215 /* AboutVC.swift */; };
+		7E6FC5D61E3070E200B13215 /* TabModVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FC5D51E3070E200B13215 /* TabModVC.swift */; };
+		7ED54E491E402E440068C171 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED54E481E402E440068C171 /* InstructionsVC.swift */; };
+		88347D5C90E18C85CDE75407 /* Pods_EOB_ReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B60539E11F637D72B83C7F2 /* Pods_EOB_ReaderTests.framework */; };
+		A81C8A5EDB32EFBA6002617C /* Pods_EOB_ReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07A3AEF9FB1B8D8A4312EF3 /* Pods_EOB_ReaderUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E0237001E1744F300F900C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E0236E11E1744ED00F900C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E0236E81E1744ED00F900C9;
+			remoteInfo = "EOB-Reader";
+		};
+		7E02370B1E1744F400F900C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E0236E11E1744ED00F900C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E0236E81E1744ED00F900C9;
+			remoteInfo = "EOB-Reader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DF30494261F00AAFBE12BE1 /* Pods-EOB-Reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOB-Reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EOB-Reader/Pods-EOB-Reader.debug.xcconfig"; sourceTree = "<group>"; };
+		2CE537D1B0E41AADA92F0425 /* Pods-EOB-Reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOB-Reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-EOB-Reader/Pods-EOB-Reader.release.xcconfig"; sourceTree = "<group>"; };
+		36C8C9EA789A50D787BB30EC /* Pods-EOB-ReaderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOB-ReaderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EOB-ReaderUITests/Pods-EOB-ReaderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		51AA0FEF415C531269DD653A /* Pods-EOB-ReaderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOB-ReaderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EOB-ReaderUITests/Pods-EOB-ReaderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54CFF279DDBE1DC265272982 /* Pods-EOB-ReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOB-ReaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EOB-ReaderTests/Pods-EOB-ReaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E0236E91E1744F300F900C9 /* EOB-Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EOB-Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0236EC1E1744F300F900C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E0236EE1E1744F300F900C9 /* RecentScansVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentScansVC.swift; sourceTree = "<group>"; };
+		7E0236F01E1744F300F900C9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		7E0236F31E1744F300F900C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E0236F51E1744F300F900C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E0236F81E1744F300F900C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E0236FA1E1744F300F900C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E0236FF1E1744F300F900C9 /* EOB-ReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EOB-ReaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0237031E1744F300F900C9 /* EOB_ReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOB_ReaderTests.swift; sourceTree = "<group>"; };
+		7E0237051E1744F300F900C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E02370A1E1744F400F900C9 /* EOB-ReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EOB-ReaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E02370E1E1744F400F900C9 /* EOB_ReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOB_ReaderUITests.swift; sourceTree = "<group>"; };
+		7E0237101E1744F400F900C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E484C701E32C4B5002EADD6 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		7E5F72581E3EC4CC007B6839 /* AgreementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementVC.swift; sourceTree = "<group>"; };
+		7E6FC5D31E306E7C00B13215 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		7E6FC5D51E3070E200B13215 /* TabModVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabModVC.swift; sourceTree = "<group>"; };
+		7ED54E481E402E440068C171 /* InstructionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
+		8B60539E11F637D72B83C7F2 /* Pods_EOB_ReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EOB_ReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC819B5A6B94DF575842EAA /* Pods_EOB_Reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EOB_Reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B87519B38973655650790B /* Pods-EOB-ReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOB-ReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EOB-ReaderTests/Pods-EOB-ReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F07A3AEF9FB1B8D8A4312EF3 /* Pods_EOB_ReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EOB_ReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E0236E61E1744ED00F900C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F2572A44442FC120646887A /* Pods_EOB_Reader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0236FC1E1744F300F900C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88347D5C90E18C85CDE75407 /* Pods_EOB_ReaderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0237071E1744F300F900C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81C8A5EDB32EFBA6002617C /* Pods_EOB_ReaderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D5A6AE72C58B6C1ED4E9933 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACC819B5A6B94DF575842EAA /* Pods_EOB_Reader.framework */,
+				8B60539E11F637D72B83C7F2 /* Pods_EOB_ReaderTests.framework */,
+				F07A3AEF9FB1B8D8A4312EF3 /* Pods_EOB_ReaderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		631A151AB8A4E5EABE569771 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DF30494261F00AAFBE12BE1 /* Pods-EOB-Reader.debug.xcconfig */,
+				2CE537D1B0E41AADA92F0425 /* Pods-EOB-Reader.release.xcconfig */,
+				E5B87519B38973655650790B /* Pods-EOB-ReaderTests.debug.xcconfig */,
+				54CFF279DDBE1DC265272982 /* Pods-EOB-ReaderTests.release.xcconfig */,
+				51AA0FEF415C531269DD653A /* Pods-EOB-ReaderUITests.debug.xcconfig */,
+				36C8C9EA789A50D787BB30EC /* Pods-EOB-ReaderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E0236E01E1744ED00F900C9 = {
+			isa = PBXGroup;
+			children = (
+				7E0236EB1E1744F300F900C9 /* EOB-Reader */,
+				7E0237021E1744F300F900C9 /* EOB-ReaderTests */,
+				7E02370D1E1744F400F900C9 /* EOB-ReaderUITests */,
+				7E0236EA1E1744F300F900C9 /* Products */,
+				631A151AB8A4E5EABE569771 /* Pods */,
+				4D5A6AE72C58B6C1ED4E9933 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E0236EA1E1744F300F900C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E0236E91E1744F300F900C9 /* EOB-Reader.app */,
+				7E0236FF1E1744F300F900C9 /* EOB-ReaderTests.xctest */,
+				7E02370A1E1744F400F900C9 /* EOB-ReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E0236EB1E1744F300F900C9 /* EOB-Reader */ = {
+			isa = PBXGroup;
+			children = (
+				7E0236EC1E1744F300F900C9 /* AppDelegate.swift */,
+				7E5F72581E3EC4CC007B6839 /* AgreementVC.swift */,
+				7E0236EE1E1744F300F900C9 /* RecentScansVC.swift */,
+				7E0236F01E1744F300F900C9 /* CameraViewController.swift */,
+				7ED54E481E402E440068C171 /* InstructionsVC.swift */,
+				7E6FC5D31E306E7C00B13215 /* AboutVC.swift */,
+				7E6FC5D51E3070E200B13215 /* TabModVC.swift */,
+				7E0236F21E1744F300F900C9 /* Main.storyboard */,
+				7E0236F71E1744F300F900C9 /* LaunchScreen.storyboard */,
+				7E484C701E32C4B5002EADD6 /* tessdata */,
+				7E0236F51E1744F300F900C9 /* Assets.xcassets */,
+				7E0236FA1E1744F300F900C9 /* Info.plist */,
+			);
+			path = "EOB-Reader";
+			sourceTree = "<group>";
+		};
+		7E0237021E1744F300F900C9 /* EOB-ReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E0237031E1744F300F900C9 /* EOB_ReaderTests.swift */,
+				7E0237051E1744F300F900C9 /* Info.plist */,
+			);
+			path = "EOB-ReaderTests";
+			sourceTree = "<group>";
+		};
+		7E02370D1E1744F400F900C9 /* EOB-ReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E02370E1E1744F400F900C9 /* EOB_ReaderUITests.swift */,
+				7E0237101E1744F400F900C9 /* Info.plist */,
+			);
+			path = "EOB-ReaderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E0236E81E1744ED00F900C9 /* EOB-Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0237131E1744F400F900C9 /* Build configuration list for PBXNativeTarget "EOB-Reader" */;
+			buildPhases = (
+				BD8455E563B6FBBA47F60F6D /* [CP] Check Pods Manifest.lock */,
+				7E0236E51E1744ED00F900C9 /* Sources */,
+				7E0236E61E1744ED00F900C9 /* Frameworks */,
+				7E0236E71E1744ED00F900C9 /* Resources */,
+				C178BA4FE828E11D9E9491AA /* [CP] Embed Pods Frameworks */,
+				CE024438C6284E7BA6922B00 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EOB-Reader";
+			productName = "EOB-Reader";
+			productReference = 7E0236E91E1744F300F900C9 /* EOB-Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E0236FE1E1744F300F900C9 /* EOB-ReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0237161E1744F400F900C9 /* Build configuration list for PBXNativeTarget "EOB-ReaderTests" */;
+			buildPhases = (
+				5E45F88ED91568799E5861DC /* [CP] Check Pods Manifest.lock */,
+				7E0236FB1E1744F300F900C9 /* Sources */,
+				7E0236FC1E1744F300F900C9 /* Frameworks */,
+				7E0236FD1E1744F300F900C9 /* Resources */,
+				D0C940AF27C57AA3F0AD694C /* [CP] Embed Pods Frameworks */,
+				3823C5EF3479C096BB3098CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E0237011E1744F300F900C9 /* PBXTargetDependency */,
+			);
+			name = "EOB-ReaderTests";
+			productName = "EOB-ReaderTests";
+			productReference = 7E0236FF1E1744F300F900C9 /* EOB-ReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E0237091E1744F300F900C9 /* EOB-ReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0237191E1744F400F900C9 /* Build configuration list for PBXNativeTarget "EOB-ReaderUITests" */;
+			buildPhases = (
+				21C76EDD4206A3D6727E2AD1 /* [CP] Check Pods Manifest.lock */,
+				7E0237061E1744F300F900C9 /* Sources */,
+				7E0237071E1744F300F900C9 /* Frameworks */,
+				7E0237081E1744F300F900C9 /* Resources */,
+				CBD0318C8D180F87ABA12953 /* [CP] Embed Pods Frameworks */,
+				E765A0F783BFB57DC93A9FED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E02370C1E1744F400F900C9 /* PBXTargetDependency */,
+			);
+			name = "EOB-ReaderUITests";
+			productName = "EOB-ReaderUITests";
+			productReference = 7E02370A1E1744F400F900C9 /* EOB-ReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E0236E11E1744ED00F900C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Samuel Cheng";
+				TargetAttributes = {
+					7E0236E81E1744ED00F900C9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3NS4FVRN45;
+						ProvisioningStyle = Automatic;
+					};
+					7E0236FE1E1744F300F900C9 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E0236E81E1744ED00F900C9;
+					};
+					7E0237091E1744F300F900C9 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E0236E81E1744ED00F900C9;
+					};
+				};
+			};
+			buildConfigurationList = 7E0236E41E1744ED00F900C9 /* Build configuration list for PBXProject "EOB-Reader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E0236E01E1744ED00F900C9;
+			productRefGroup = 7E0236EA1E1744F300F900C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E0236E81E1744ED00F900C9 /* EOB-Reader */,
+				7E0236FE1E1744F300F900C9 /* EOB-ReaderTests */,
+				7E0237091E1744F300F900C9 /* EOB-ReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E0236E71E1744ED00F900C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0236F91E1744F300F900C9 /* LaunchScreen.storyboard in Resources */,
+				7E484C711E32C4B5002EADD6 /* tessdata in Resources */,
+				7E0236F61E1744F300F900C9 /* Assets.xcassets in Resources */,
+				7E0236F41E1744F300F900C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0236FD1E1744F300F900C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0237081E1744F300F900C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21C76EDD4206A3D6727E2AD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3823C5EF3479C096BB3098CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOB-ReaderTests/Pods-EOB-ReaderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E45F88ED91568799E5861DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD8455E563B6FBBA47F60F6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C178BA4FE828E11D9E9491AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOB-Reader/Pods-EOB-Reader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD0318C8D180F87ABA12953 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOB-ReaderUITests/Pods-EOB-ReaderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE024438C6284E7BA6922B00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOB-Reader/Pods-EOB-Reader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C940AF27C57AA3F0AD694C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOB-ReaderTests/Pods-EOB-ReaderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E765A0F783BFB57DC93A9FED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOB-ReaderUITests/Pods-EOB-ReaderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E0236E51E1744ED00F900C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6FC5D61E3070E200B13215 /* TabModVC.swift in Sources */,
+				7E0236F11E1744F300F900C9 /* CameraViewController.swift in Sources */,
+				7E0236ED1E1744F300F900C9 /* AppDelegate.swift in Sources */,
+				7E0236EF1E1744F300F900C9 /* RecentScansVC.swift in Sources */,
+				7ED54E491E402E440068C171 /* InstructionsVC.swift in Sources */,
+				7E6FC5D41E306E7C00B13215 /* AboutVC.swift in Sources */,
+				7E5F72591E3EC4CC007B6839 /* AgreementVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0236FB1E1744F300F900C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0237041E1744F300F900C9 /* EOB_ReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0237061E1744F300F900C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E02370F1E1744F400F900C9 /* EOB_ReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E0237011E1744F300F900C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E0236E81E1744ED00F900C9 /* EOB-Reader */;
+			targetProxy = 7E0237001E1744F300F900C9 /* PBXContainerItemProxy */;
+		};
+		7E02370C1E1744F400F900C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E0236E81E1744ED00F900C9 /* EOB-Reader */;
+			targetProxy = 7E02370B1E1744F400F900C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E0236F21E1744F300F900C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E0236F31E1744F300F900C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E0236F71E1744F300F900C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E0236F81E1744F300F900C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E0237111E1744F400F900C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E0237121E1744F400F900C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E0237141E1744F400F900C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF30494261F00AAFBE12BE1 /* Pods-EOB-Reader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NS4FVRN45;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "EOB-Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Samuel-Cheng.EOB-Reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7E0237151E1744F400F900C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE537D1B0E41AADA92F0425 /* Pods-EOB-Reader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NS4FVRN45;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "EOB-Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Samuel-Cheng.EOB-Reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7E0237171E1744F400F900C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B87519B38973655650790B /* Pods-EOB-ReaderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "EOB-ReaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Samuel-Cheng.EOB-ReaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOB-Reader.app/EOB-Reader";
+			};
+			name = Debug;
+		};
+		7E0237181E1744F400F900C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54CFF279DDBE1DC265272982 /* Pods-EOB-ReaderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "EOB-ReaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Samuel-Cheng.EOB-ReaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOB-Reader.app/EOB-Reader";
+			};
+			name = Release;
+		};
+		7E02371A1E1744F400F900C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51AA0FEF415C531269DD653A /* Pods-EOB-ReaderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "EOB-ReaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Samuel-Cheng.EOB-ReaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "EOB-Reader";
+			};
+			name = Debug;
+		};
+		7E02371B1E1744F400F900C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36C8C9EA789A50D787BB30EC /* Pods-EOB-ReaderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "EOB-ReaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Samuel-Cheng.EOB-ReaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "EOB-Reader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E0236E41E1744ED00F900C9 /* Build configuration list for PBXProject "EOB-Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0237111E1744F400F900C9 /* Debug */,
+				7E0237121E1744F400F900C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0237131E1744F400F900C9 /* Build configuration list for PBXNativeTarget "EOB-Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0237141E1744F400F900C9 /* Debug */,
+				7E0237151E1744F400F900C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0237161E1744F400F900C9 /* Build configuration list for PBXNativeTarget "EOB-ReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0237171E1744F400F900C9 /* Debug */,
+				7E0237181E1744F400F900C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0237191E1744F400F900C9 /* Build configuration list for PBXNativeTarget "EOB-ReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E02371A1E1744F400F900C9 /* Debug */,
+				7E02371B1E1744F400F900C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E0236E11E1744ED00F900C9 /* Project object */;
+}
