@@ -11,11 +11,7 @@ import TesseractOCR
 
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate, G8TesseractDelegate {
-    
-    @IBOutlet weak var scanNameText: UITextField!
-    
 
-    @IBOutlet weak var pickedImage1: UIImageView!
 
     @IBAction func takePhoto1(_ sender: Any) {
         // Check if the camera is available on the device as a source type
@@ -69,8 +65,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate,UI
     // it into the image view we've placed on the main screen.
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage2 : UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            pickedImage1.contentMode = .scaleAspectFit
-            pickedImage1.image = pickedImage2
+//            pickedImage1.contentMode = .scaleAspectFit
+//            pickedImage1.image = pickedImage2
         };
     
         self.dismiss(animated: true, completion: nil)
@@ -81,12 +77,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate,UI
         let tempNavVC = self.tabBarController!.viewControllers![0] as! UINavigationController
         let scanVCRef = tempNavVC.viewControllers[0] as! RecentScansVC
         
-        if(scanNameText.text == "") {
-            scanVCRef.insertCell("New Scan")
-        }
-        else {
-            scanVCRef.insertCell((scanNameText?.text)!)
-        }
+        print ("processing")
+//        if(scanNameText.text == "") {
+//            scanVCRef.insertCell("New Scan")
+//        }
+//        else {
+//            scanVCRef.insertCell((scanNameText?.text)!)
+//        }
     }
         //        // create a tesseract constant and initialize it to the english language
         //        if let tesseract = G8Tesseract(language: "eng") {

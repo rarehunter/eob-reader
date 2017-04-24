@@ -10,7 +10,9 @@ import UIKit
 
 class RecentScansVC: UITableViewController {
     
-    var items = ["Item 1", "Item 2", "Item 3"]
+    var items = [String]() // array of Table Cell titles
+    var thumbnail_array = [UIImageView]() // array of thumbnails
+    var detailVCArray = [UIViewController]() // array of view controllers
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +21,9 @@ class RecentScansVC: UITableViewController {
         // register a cell to return
         tableView.register(ScanCell.self, forCellReuseIdentifier: "cellID")
         
-        // commented out code for an "Insert-cells" button
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Insert", style: .plain, target: self, action: #selector(RecentScansVC.insertCell))
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,14 +36,23 @@ class RecentScansVC: UITableViewController {
     
     // return the actual view for the cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let scancell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as! ScanCell
-        scancell.nameLabel.text = items[indexPath.row]
+        let scancell = tableView.dequeueReusableCell(withIdentifier: "scanCellTemplate", for: indexPath) as! ScanCell
+        scancell.scanNameLabel.text = items[indexPath.row]
+        scancell.thumbImageView.image = thumbnail_array[indexPath.row].image
         scancell.mytvc = self
         return scancell
     }
     
-    func insertCell(_ scanTitle : String) {
+    // called when a cell is clicked
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        let newChildVC = detailVCArray[indexPath.row]
+        self.navigationController?.pushViewController(newChildVC, animated: true)
+    }
+    
+    func insertCell(_ scanTitle : String, thumbnail : UIImageView) {
         items.append(scanTitle)
+        thumbnail_array.append(thumbnail)
         tableView.reloadData()
     }
     
@@ -52,65 +62,104 @@ class RecentScansVC: UITableViewController {
         if let deletionIndexPath = tableView.indexPath(for: cell) {
             items.remove(at: deletionIndexPath.row)
             tableView.deleteRows(at: [deletionIndexPath], with: .automatic)
+            
+            // don't forget to delete the new VC
+            detailVCArray.remove(at: deletionIndexPath.row)
         }
         
     }
+    
+    // when the thumbnail image is tapped, it opens up to full screen 
+    // and when that image is tapped, it goes back to thumbnail
+    @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
+        let imageView = sender.view as! UIImageView
+        let newImageView = UIImageView(image: imageView.image)
+        newImageView.frame = self.view.frame
+        newImageView.backgroundColor = .black
+        newImageView.contentMode = .scaleAspectFit
+        newImageView.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        newImageView.addGestureRecognizer(tap)
+        self.view.addSubview(newImageView)
+    }
+    
+    func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+        sender.view?.removeFromSuperview()
+    }
+        
+    // code to display empty data label when there are no cell items
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        
+        // if there are scans to display...
+        if items.count > 0 {
+            tableView.backgroundView = nil
+            tableView.separatorStyle = .singleLine
+            return 1
+        }
+        else { // otherwise, return 0, remove cell lines, and display a Label
+            let rect = CGRect(x: 0,
+                              y: 0,
+                              width: tableView.bounds.size.width,
+                              height: tableView.bounds.size.height)
+            let noScanLabel: UILabel = UILabel(frame: rect)
+            
+            noScanLabel.text = "No Scans"
+            noScanLabel.textColor = UIColor.gray
+            noScanLabel.font = UIFont.boldSystemFont(ofSize: 24)
+            noScanLabel.numberOfLines = 0
+            noScanLabel.textAlignment = NSTextAlignment.center
+            
+            tableView.backgroundView = noScanLabel
+            
+            let subTitleLabel : UILabel = UILabel(frame: rect)
+            subTitleLabel.frame.origin.y = 150
+            subTitleLabel.text = "Start a scan below"
+            subTitleLabel.textColor = UIColor.gray
+            subTitleLabel.font = UIFont.boldSystemFont(ofSize: 18)
+            subTitleLabel.numberOfLines = 0
+            subTitleLabel.textAlignment = NSTextAlignment.center
+
+            let downArrowImage : UIImageView = UIImageView(image: #imageLiteral(resourceName: "down_arrow"))
+            downArrowImage.frame.origin.y = UIScreen.main.bounds.height - self.tabBarController!.tabBar.frame.size.height - 90
+            downArrowImage.frame.origin.x = UIScreen.main.bounds.width / 2 - 13
+            downArrowImage.contentMode = .scaleAspectFit
+            
+
+            tableView.backgroundView?.addSubview(subTitleLabel)
+            tableView.backgroundView?.addSubview(downArrowImage)
+            
+            tableView.separatorStyle = .none
+
+            return 0
+        }
+    }
+    
+
+    
+    // these next two functions are to handle the "swipe-left-delete" functionality
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.delete) {
+            print("count: " + String(detailVCArray.count))
+            print("Row " + String(indexPath.row))
+            
+            items.remove(at: indexPath.row)
+            print("1")
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            print("2")
+            tableView.reloadData()
+
+            // don't forget to delete the new VC
+            detailVCArray.remove(at: indexPath.row)
+            
+            print("count: " + String(detailVCArray.count))
+
+        }
+    }
 }
-
-// custom class for each cell containing scan results
-class ScanCell: UITableViewCell {
-    
-    var mytvc : RecentScansVC?
-    
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        setupViews()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    let nameLabel : UILabel = {
-        let label = UILabel()
-        label.text = "Sample Item"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    let actionButton : UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Delete", for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
-    
-    func setupViews() {
-        addSubview(nameLabel)
-        addSubview(actionButton)
-        
-        actionButton.addTarget(self, action: #selector(ScanCell.handleAction), for: .touchUpInside)
-        
-        // specify constraints with Auto Layout system
-        // span the left edge to the right edge with v0 where v0 is nameLabel
-        // push the label 16 px from the left edge
-        
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-16-[label]-8-[button(80)]-8-|", options: NSLayoutFormatOptions(), metrics: nil, views: ["label" : nameLabel, "button" : actionButton]))
-        
-        // specify vertical constraints
-        addConstraint(NSLayoutConstraint.constraints(withVisualFormat: "V:|-12-[label]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["label" : nameLabel])[0])
-        
-        addConstraint(NSLayoutConstraint.constraints(withVisualFormat: "V:|-8-[button]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["button" : actionButton])[0])
-
-
-    }
-    
-    func handleAction() {
-        mytvc?.deleteCell(cell: self)
-    }
-}
-
 
 
 

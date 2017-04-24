@@ -31,7 +31,22 @@ class AgreementVC: UIViewController, UITextViewDelegate {
 
     }
 
-    
+    @IBAction func disagreeAction(_ sender: Any) {
+        
+        // show the alert window
+        let alertController = UIAlertController(title: "Cannot Proceed", message: "By not agreeing to the terms, you cannot continue using the EOB Reader application.", preferredStyle: .alert)
+        
+        let actionOK = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+            //This is called when the user presses the OK button.
+            print("You've pressed the OK button");
+        }
+        
+
+        alertController.addAction(actionOK)
+        
+        //Present the alert controller
+        self.present(alertController, animated: true, completion: nil)
+    }
     
     
     

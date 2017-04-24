@@ -10,17 +10,21 @@
 		5F2572A44442FC120646887A /* Pods_EOB_Reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC819B5A6B94DF575842EAA /* Pods_EOB_Reader.framework */; };
 		7E0236ED1E1744F300F900C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0236EC1E1744F300F900C9 /* AppDelegate.swift */; };
 		7E0236EF1E1744F300F900C9 /* RecentScansVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0236EE1E1744F300F900C9 /* RecentScansVC.swift */; };
-		7E0236F11E1744F300F900C9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0236F01E1744F300F900C9 /* CameraViewController.swift */; };
 		7E0236F41E1744F300F900C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0236F21E1744F300F900C9 /* Main.storyboard */; };
 		7E0236F61E1744F300F900C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0236F51E1744F300F900C9 /* Assets.xcassets */; };
 		7E0236F91E1744F300F900C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0236F71E1744F300F900C9 /* LaunchScreen.storyboard */; };
 		7E0237041E1744F300F900C9 /* EOB_ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0237031E1744F300F900C9 /* EOB_ReaderTests.swift */; };
 		7E02370F1E1744F400F900C9 /* EOB_ReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E02370E1E1744F400F900C9 /* EOB_ReaderUITests.swift */; };
+		7E0A73141E66676F006C31A3 /* InstructionsPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A73131E66676F006C31A3 /* InstructionsPageVC.swift */; };
+		7E0A73161E67A665006C31A3 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A73151E67A665006C31A3 /* CameraVC.swift */; };
+		7E0A73181E68DD09006C31A3 /* redVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A73171E68DD09006C31A3 /* redVC.swift */; };
+		7E0A731A1E6B4082006C31A3 /* ScanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A73191E6B4082006C31A3 /* ScanCell.swift */; };
+		7E0A731C1E6B7A8C006C31A3 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A731B1E6B7A8C006C31A3 /* ResultsVC.swift */; };
+		7E0A731E1E6C9E01006C31A3 /* ResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A731D1E6C9E01006C31A3 /* ResultsCell.swift */; };
 		7E484C711E32C4B5002EADD6 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 7E484C701E32C4B5002EADD6 /* tessdata */; };
 		7E5F72591E3EC4CC007B6839 /* AgreementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F72581E3EC4CC007B6839 /* AgreementVC.swift */; };
 		7E6FC5D41E306E7C00B13215 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FC5D31E306E7C00B13215 /* AboutVC.swift */; };
 		7E6FC5D61E3070E200B13215 /* TabModVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FC5D51E3070E200B13215 /* TabModVC.swift */; };
-		7ED54E491E402E440068C171 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED54E481E402E440068C171 /* InstructionsVC.swift */; };
 		88347D5C90E18C85CDE75407 /* Pods_EOB_ReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B60539E11F637D72B83C7F2 /* Pods_EOB_ReaderTests.framework */; };
 		A81C8A5EDB32EFBA6002617C /* Pods_EOB_ReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07A3AEF9FB1B8D8A4312EF3 /* Pods_EOB_ReaderUITests.framework */; };
 /* End PBXBuildFile section */
@@ -51,7 +55,6 @@
 		7E0236E91E1744F300F900C9 /* EOB-Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EOB-Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0236EC1E1744F300F900C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E0236EE1E1744F300F900C9 /* RecentScansVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentScansVC.swift; sourceTree = "<group>"; };
-		7E0236F01E1744F300F900C9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		7E0236F31E1744F300F900C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E0236F51E1744F300F900C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E0236F81E1744F300F900C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,11 +65,16 @@
 		7E02370A1E1744F400F900C9 /* EOB-ReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EOB-ReaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E02370E1E1744F400F900C9 /* EOB_ReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOB_ReaderUITests.swift; sourceTree = "<group>"; };
 		7E0237101E1744F400F900C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E0A73131E66676F006C31A3 /* InstructionsPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsPageVC.swift; sourceTree = "<group>"; };
+		7E0A73151E67A665006C31A3 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		7E0A73171E68DD09006C31A3 /* redVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = redVC.swift; sourceTree = "<group>"; };
+		7E0A73191E6B4082006C31A3 /* ScanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanCell.swift; sourceTree = "<group>"; };
+		7E0A731B1E6B7A8C006C31A3 /* ResultsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
+		7E0A731D1E6C9E01006C31A3 /* ResultsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsCell.swift; sourceTree = "<group>"; };
 		7E484C701E32C4B5002EADD6 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		7E5F72581E3EC4CC007B6839 /* AgreementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementVC.swift; sourceTree = "<group>"; };
 		7E6FC5D31E306E7C00B13215 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		7E6FC5D51E3070E200B13215 /* TabModVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabModVC.swift; sourceTree = "<group>"; };
-		7ED54E481E402E440068C171 /* InstructionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
 		8B60539E11F637D72B83C7F2 /* Pods_EOB_ReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EOB_ReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC819B5A6B94DF575842EAA /* Pods_EOB_Reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EOB_Reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B87519B38973655650790B /* Pods-EOB-ReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOB-ReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EOB-ReaderTests/Pods-EOB-ReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,10 +159,14 @@
 			children = (
 				7E0236EC1E1744F300F900C9 /* AppDelegate.swift */,
 				7E5F72581E3EC4CC007B6839 /* AgreementVC.swift */,
+				7E0A73151E67A665006C31A3 /* CameraVC.swift */,
+				7E0A73191E6B4082006C31A3 /* ScanCell.swift */,
 				7E0236EE1E1744F300F900C9 /* RecentScansVC.swift */,
-				7E0236F01E1744F300F900C9 /* CameraViewController.swift */,
-				7ED54E481E402E440068C171 /* InstructionsVC.swift */,
+				7E0A731D1E6C9E01006C31A3 /* ResultsCell.swift */,
+				7E0A731B1E6B7A8C006C31A3 /* ResultsVC.swift */,
+				7E0A73131E66676F006C31A3 /* InstructionsPageVC.swift */,
 				7E6FC5D31E306E7C00B13215 /* AboutVC.swift */,
+				7E0A73171E68DD09006C31A3 /* redVC.swift */,
 				7E6FC5D51E3070E200B13215 /* TabModVC.swift */,
 				7E0236F21E1744F300F900C9 /* Main.storyboard */,
 				7E0236F71E1744F300F900C9 /* LaunchScreen.storyboard */,
@@ -466,12 +478,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0A731E1E6C9E01006C31A3 /* ResultsCell.swift in Sources */,
 				7E6FC5D61E3070E200B13215 /* TabModVC.swift in Sources */,
-				7E0236F11E1744F300F900C9 /* CameraViewController.swift in Sources */,
+				7E0A73141E66676F006C31A3 /* InstructionsPageVC.swift in Sources */,
 				7E0236ED1E1744F300F900C9 /* AppDelegate.swift in Sources */,
 				7E0236EF1E1744F300F900C9 /* RecentScansVC.swift in Sources */,
-				7ED54E491E402E440068C171 /* InstructionsVC.swift in Sources */,
+				7E0A731A1E6B4082006C31A3 /* ScanCell.swift in Sources */,
+				7E0A731C1E6B7A8C006C31A3 /* ResultsVC.swift in Sources */,
 				7E6FC5D41E306E7C00B13215 /* AboutVC.swift in Sources */,
+				7E0A73161E67A665006C31A3 /* CameraVC.swift in Sources */,
+				7E0A73181E68DD09006C31A3 /* redVC.swift in Sources */,
 				7E5F72591E3EC4CC007B6839 /* AgreementVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
